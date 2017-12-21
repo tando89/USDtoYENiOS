@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CurrencyConverter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD to Japanese YEN converter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qhj-Dt-hS6">
+                                <rect key="frame" x="83.333333333333329" y="30" width="247.66666666666669" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter USD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3UE-NU-IFk">
+                                <rect key="frame" x="163" y="73" width="88" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="postal-code"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRo-f4-aWD">
+                                <rect key="frame" x="179.66666666666666" y="172" width="55" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Convert">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="myButton1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LQa-Gl-Fh9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmA-9b-kJc">
+                                <rect key="frame" x="207" y="268" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.15172021124334187" green="0.39279739767158584" blue="0.183501003891372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Qhj-Dt-hS6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="6jE-pM-zdF"/>
+                            <constraint firstItem="jRo-f4-aWD" firstAttribute="top" secondItem="3UE-NU-IFk" secondAttribute="bottom" constant="69" id="HGI-hi-aYj"/>
+                            <constraint firstItem="3UE-NU-IFk" firstAttribute="top" secondItem="Qhj-Dt-hS6" secondAttribute="bottom" constant="22" id="Zkv-Xb-4aj"/>
+                            <constraint firstItem="3UE-NU-IFk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eSP-Sg-Vqy"/>
+                            <constraint firstItem="jRo-f4-aWD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g2D-yf-NBa"/>
+                            <constraint firstItem="Qhj-Dt-hS6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="haR-Ff-JRg"/>
+                            <constraint firstItem="xmA-9b-kJc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i2X-eF-Ysa"/>
+                            <constraint firstItem="xmA-9b-kJc" firstAttribute="top" secondItem="jRo-f4-aWD" secondAttribute="bottom" constant="66" id="tT7-o6-bUL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="myLabel1" destination="xmA-9b-kJc" id="aV8-YU-ygq"/>
+                        <outlet property="textField1" destination="3UE-NU-IFk" id="MEB-Gb-eOA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
