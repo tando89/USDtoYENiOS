@@ -1,0 +1,23 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '9.0'
+
+use_frameworks!
+target 'CurrencyConverter' do
+    pod 'Alamofire'
+    pod 'SwiftyJSON'
+    pod 'DropDown'
+end
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+
+  # Pods for CurrencyConverter
+
+  target 'CurrencyConverterTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'CurrencyConverterUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
